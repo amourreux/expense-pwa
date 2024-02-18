@@ -3,7 +3,7 @@
   <form id="form" @submit.prevent="onSubmit">
     <div class="form-control">
       <label for="text">Text</label>
-      <input type="text" id="text" placeholder="Enter text..." v-model="text" />
+      <input type="text" id="text" placeholder="Enter text..." v-model="text" autocomplete="off"/>
     </div>
     <div class="form-control">
       <label for="amount"
@@ -11,10 +11,12 @@
         (negative - expense, positive - income)</label
       >
       <input
-        type="text"
+        type="number"
         id="amount"
         placeholder="Enter amount..."
+        step="0.01"
         v-model="amount"
+        autocomplete="off"
       />
     </div>
     <button class="btn">Add transaction</button>
