@@ -26,7 +26,12 @@ export default defineConfig({
         description: 'expense app to manage money',
         theme_color: "#52a8f2",
         display:"standalone",
-        icon: [
+        icons: [
+          {
+            src: "favicon.ico",
+            sizes: "64x64 32x32 24x24 16x16",
+            type: "image/x-icon"
+          },
           {
             src: "pwa-64x64.png",
             sizes: "64x64",
@@ -35,7 +40,8 @@ export default defineConfig({
           {
             src: "pwa-192x192.png",
             sizes: "192x192",
-            type: "image/png"
+            type: "image/png",
+            purpose: "any"
           },
           {
             src: "pwa-144x44.png",
@@ -51,7 +57,7 @@ export default defineConfig({
             src: "maskable-icon-512x512.png",
             sizes: "512x512",
             type: "image/png",
-            purpose: "maskable"
+            purpose: "maskable any"
           }
         ]
       }
