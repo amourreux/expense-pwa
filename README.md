@@ -6,6 +6,8 @@ An expense tracker app built with Vue 3 and the composition API.
 - Track balance
 - Save data to local storage
 
+- fork of https://github.com/bradtraversy/vue-expense-tracker 
+- added PWA specs
 
 ## Project Setup
 
